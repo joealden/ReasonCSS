@@ -261,11 +261,194 @@ type css = {
   breakAfter: option(string),
   breakBefore: option(string),
   breakInside: option(string),
-  /* old */
+  /**/
+  captionSide: option(string),
+  caretColor: option(string),
+  charset: option(string), /* TODO: @ RULE */
+  clear: option(string),
+  clip: option(string),
   color: option(color),
+  /* Column properties */
+  columnCount: option(string),
+  columnFill: option(string),
+  columnGap: option(string),
+  columnRule: option(string),
+  columnRuleColor: option(string),
+  columnRuleStyle: option(string),
+  columnRuleWidth: option(string),
+  columnSpan: option(string),
+  columnWidth: option(string),
+  columns: option(string),
+  /**/
+  content: option(string),
+  counterIncrement: option(string),
+  counterReset: option(string),
+  cursor: option(string),
+  direction: option(string),
+  display: option(string),
+  emptyCells: option(string),
+  filter: option(string),
+  /* Flex properties */
+  flex: option(string),
+  flexBasis: option(string),
+  flexDirection: option(string),
+  flexFlow: option(string),
+  flexGrow: option(string),
+  flexShrink: option(string),
+  flexWrap: option(string),
+  /**/
+  float: option(string),
+  /* Font properties */
+  font: option(string),
+  fontFace: option(string), /* TODO: @ RULE */
+  fontFamily: option(string),
+  fontFeatureSettings: option(string), /* TODO: Needed? */
+  fontFeatureValues: option(string), /* TODO: Needed? */
+  fontKerning: option(string),
+  fontLanguageOverride: option(string), /* TODO: Needed? */
   fontSize: option(measurement),
-  width: option(measurement),
+  fontSizeAdjust: option(string),
+  fontStretch: option(string),
+  fontStyle: option(string),
+  fontSynthesis: option(string), /* TODO: Needed? */
+  fontVariant: option(string),
+  fontVariantAlternates: option(string), /* TODO: Needed? */
+  fontVariantCaps: option(string), /* TODO: Needed? */
+  fontVariantEastAsian: option(string), /* TODO: Needed? */
+  fontVariantLigatures: option(string), /* TODO: Needed? */
+  fontVariantNumeric: option(string), /* TODO: Needed? */
+  fontVariantPosition: option(string), /* TODO: Needed? */
+  fontWeight: option(string),
+  /* Grid properties */
+  grid: option(string),
+  gridArea: option(string),
+  gridAutoColumns: option(string),
+  gridAutoFlow: option(string),
+  gridAutoRows: option(string),
+  gridColumn: option(string),
+  gridColumnEnd: option(string),
+  gridColumnGap: option(string),
+  gridColumnStart: option(string),
+  gridGap: option(string),
+  gridRow: option(string),
+  gridRowEnd: option(string),
+  gridRowGap: option(string),
+  gridRowStart: option(string),
+  gridTemplate: option(string),
+  gridTemplateAreas: option(string),
+  gridTemplateColumns: option(string),
+  girdTemplateRows: option(string),
+  /**/
+  hangingPunctuation: option(string),
   height: option(measurement),
+  hyphens: option(string),
+  imageRendering: option(string), /* TODO: Needed? */
+  import: option(string), /* TODO: @ RULE */
+  isolation: option(string),
+  justifyContent: option(string),
+  keyframes: option(string), /* TODO: @ RULE */
+  left: option(string),
+  letterSpacing: option(string),
+  /* Line properties */
+  lineBreak: option(string),
+  lineHeight: option(string),
+  /* List properties */
+  listStyle: option(string),
+  listStyleImage: option(string),
+  listStylePosition: option(string),
+  listStyleType: option(string),
+  /* Margin properties */
+  margin: option(string),
+  marginBottom: option(string),
+  marginLeft: option(string),
+  marginRight: option(string),
+  marginTop: option(string),
+  maxHeight: option(string),
+  maxWidth: option(string),
+  media: option(string), /* TODO: @ RULE */
+  minHeight: option(string),
+  minWidth: option(string),
+  mixBlendMode: option(string),
+  objectFit: option(string),
+  objectPosition: option(string),
+  opacity: option(string),
+  order: option(string),
+  orphans: option(string),
+  /* Outline properties */
+  outline: option(string),
+  outlineColor: option(string),
+  outlineOffset: option(string),
+  outlineStyle: option(string),
+  outlineWidth: option(string),
+  /* Overflow properties */
+  overflow: option(string),
+  overflowWrap: option(string),
+  overflowX: option(string),
+  overflowY: option(string),
+  /* Padding properties */
+  padding: option(string),
+  paddingBottom: option(string),
+  paddingLeft: option(string),
+  paddingRight: option(string),
+  paddingTop: option(string),
+  /* Page properties */
+  pageBreakAfter: option(string),
+  pageBreakBefore: option(string),
+  pageBreakInside: option(string),
+  /* Perspective properties */
+  perspective: option(string),
+  perspectiveOrigin: option(string),
+  /**/
+  pointerEvents: option(string),
+  position: option(string),
+  quotes: option(string),
+  resize: option(string),
+  right: option(string),
+  tabSize: option(string),
+  tableLayout: option(string),
+  /* Text properties */
+  textAlign: option(string),
+  textAlignLast: option(string),
+  textCombineUpright: option(string), /* TODO: Needed? */
+  textDecoration: option(string),
+  textDecorationColor: option(string),
+  textDecorationLine: option(string),
+  textDecorationStyle: option(string),
+  textIndent: option(string),
+  textJustify: option(string),
+  textOrientation: option(string), /* TODO: Needed? */
+  textOverflow: option(string),
+  textShadow: option(string),
+  textTransform: option(string),
+  textUnderlinePosition: option(string), /* TODO: Needed? */
+  /**/
+  top: option(string),
+  /* Transform properties */
+  transform: option(string),
+  transformOrigin: option(string),
+  transformStyle: option(string),
+  /* Transition properties */
+  transition: option(string),
+  transitionDelay: option(string),
+  transitionDuration: option(string),
+  transitionProperty: option(string),
+  transitionTimingFunction: option(string),
+  /**/
+  unicodeBidi: option(string),
+  userSelect: option(string),
+  verticalAlign: option(string),
+  visibility: option(string),
+  whiteSpace: option(string),
+  widows: option(string), /* TODO: Needed? */
+  width: option(measurement),
+  /* Word properties */
+  wordBreak: option(string),
+  wordSpacing: option(string),
+  wordWrap: option(string),
+  /**/
+  writingMode: option(string),
+  zIndex: option(string),
+  /* TODO: Add browser prefix options */
 };
 
 /* let buildCssRecord = () => {} */
