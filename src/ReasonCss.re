@@ -303,7 +303,7 @@ type css = {
   fontFace: option(string), /* TODO: @ RULE */
   fontFamily: option(string),
   fontFeatureSettings: option(string), /* TODO: Needed? */
-  fontFeatureValues: option(string), /* TODO: Needed? */
+  fontFeatureValues: option(string), /* TODO: Needed?, @ RULE */
   fontKerning: option(string),
   fontLanguageOverride: option(string), /* TODO: Needed? */
   fontSize: option(measurement),
