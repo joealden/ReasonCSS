@@ -257,10 +257,10 @@ type css = {
   boxDecorationBreak: option(string),
   boxShadow: option(string),
   boxSizing: option(string),
-  /* Break properties - TODO: Needed? */
-  breakAfter: option(string),
-  breakBefore: option(string),
-  breakInside: option(string),
+  /* Break properties */
+  breakAfter: option(string), /* TODO: Needed? */
+  breakBefore: option(string), /* TODO: Needed? */
+  breakInside: option(string), /* TODO: Needed? */
   /**/
   captionSide: option(string),
   caretColor: option(string),
