@@ -1,19 +1,5 @@
 {
-  "name": "reason-test",
-  "version": "0.1.0",
-  "sources": {
-    "dir": "src",
-    "subdirs": true
-  },
-  "package-specs": {
-    "module": "commonjs",
-    "in-source": true
-  },
-  "suffix": ".bs.js",
-  "bs-dependencies": [],
-  "warnings": {
-    "error": "+101"
-  },
-  "namespace": true,
+  "name": "reason-css",
+  "sources": "src",
   "refmt": 3
 }
