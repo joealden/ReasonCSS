@@ -974,7 +974,7 @@ let colorToString =
   | DarkBlue => "#00008B"
   | DarkCyan => "#008B8B"
   | DarkGoldenRod => "#B8860B"
-  | DarkGray => "#A9A9A9"
+  | DarkGray
   | DarkGrey => "#A9A9A9"
   | DarkGreen => "#006400"
   | DarkKhaki => "#BDB76B"
@@ -992,7 +992,7 @@ let colorToString =
   | DarkViolet => "#9400D3"
   | DeepPink => "#FF1493"
   | DeepSkyBlue => "#00BFFF"
-  | DimGray => "#696969"
+  | DimGray
   | DimGrey => "#696969"
   | DodgerBlue => "#1E90FF"
   | FireBrick => "#B22222"
@@ -1003,7 +1003,7 @@ let colorToString =
   | GhostWhite => "#F8F8FF"
   | Gold => "#FFD700"
   | GoldenRod => "#DAA520"
-  | Gray => "#808080"
+  | Gray
   | Grey => "#808080"
   | Green => "#008000"
   | GreenYellow => "#ADFF2F"
@@ -1021,14 +1021,14 @@ let colorToString =
   | LightCoral => "#F08080"
   | LightCyan => "#E0FFFF"
   | LightGoldenRodYellow => "#FAFAD2"
-  | LightGray => "#D3D3D3"
+  | LightGray
   | LightGrey => "#D3D3D3"
   | LightGreen => "#90EE90"
   | LightPink => "#FFB6C1"
   | LightSalmon => "#FFA07A"
   | LightSeaGreen => "#20B2AA"
   | LightSkyBlue => "#87CEFA"
-  | LightSlateGray => "#778899"
+  | LightSlateGray
   | LightSlateGrey => "#778899"
   | LightSteelBlue => "#B0C4DE"
   | LightYellow => "#FFFFE0"
@@ -1082,7 +1082,7 @@ let colorToString =
   | Silver => "#C0C0C0"
   | SkyBlue => "#87CEEB"
   | SlateBlue => "#6A5ACD"
-  | SlateGray => "#708090"
+  | SlateGray
   | SlateGrey => "#708090"
   | Snow => "#FFFAFA"
   | SpringGreen => "#00FF7F"
@@ -1098,13 +1098,3 @@ let colorToString =
   | WhiteSmoke => "#F5F5F5"
   | Yellow => "#FFFF00"
   | YellowGreen => "#9ACD32";
-
-let newCssRecord = buildCssRecord(~color=Yellow, ());
-
-let logValue =
-  switch (newCssRecord.color) {
-  | Some(value) => colorToString(value)
-  | None => ""
-  };
-
-Js.log(logValue);

@@ -1,17 +1,20 @@
 {
-  "name": "reason-test",
+  "name": "reason-css",
+  "description": "A Reason library for writing CSS styles",
+  "author": "Joe Alden <me@joealden.com> (joealden.com)",
   "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://github.com/joealden/ReasonCSS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joealden/ReasonCSS.git"
+  },
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world"
   },
-  "keywords": [
-    "BuckleScript"
-  ],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^2.2.0"
+    "bs-platform": "^3.1.5"
   }
 }
