@@ -23,7 +23,8 @@ type measurement =
   | Vh(float) /* Vh(10.0) == 10vh */
   | Vmin(float) /* Vmin(10.0) == 10vmin */
   | Vmax(float) /* Vmax(10.0) == 10vmax */
-  | Percent(float); /* Percent(10.0) == 10% */
+  | Percent(float) /* Percent(10.0) == 10% */
+  | Zero; /* Zero == 0 */
 
 type color =
   /* User Defined */
@@ -34,7 +35,7 @@ type color =
   | Hsla(int, int, int, float) /* Hsla(360, 100, 100, 1) == hsla(360, 100%, 100%, 1) */
   /*
    CSS Colors (All 148 of them)
-
+   ----------------------------
    When coverted into a string, they will be converted directly into their hex code
    equivalents. This is because named colors have to be coverted by the browser,
    so this removes the run-time performance hit that using named colors has.
